@@ -15,7 +15,7 @@ def plot_winners(data_daily, datetime_str, limit, pics_per_row, n_rows, daily_ba
 
     fig = plt.figure(figsize=(pics_per_row * 5, n_rows * 7))
 
-    color = cm.rainbow(np.linspace(1, 0.6, limit))
+    color = cm.RdYlGn(np.linspace(1, 0.6, limit))
     for i, col in zip(range(limit), color):
         plt.subplot(n_rows, pics_per_row, i+1)
 
@@ -45,7 +45,7 @@ def plot_losers(data_daily, datetime_str, limit, pics_per_row, n_rows, daily_bar
 
     fig = plt.figure(figsize=(pics_per_row * 5, n_rows * 7))
 
-    color = cm.rainbow(np.linspace(0, 0.4, limit))
+    color = cm.RdYlGn(np.linspace(0, 0.4, limit))
     for i, col in zip(range(limit), color):
         plt.subplot(n_rows, pics_per_row, i+1)
 
