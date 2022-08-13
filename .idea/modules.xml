@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../timescale_archive/.idea/timescale_archive.iml" filepath="$PROJECT_DIR$/../timescale_archive/.idea/timescale_archive.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/timescaledb.iml" filepath="$PROJECT_DIR$/.idea/timescaledb.iml" />
     </modules>
   </component>

@@ -54,6 +54,19 @@ def update_database(tickers):
         conn.execute(statement, tickers=tickers)
 
 
+def update_prices():
+    conn_url = f'postgresql+psycopg2://{api_config.DB_USER}:{api_config.DB_PASS}' \
+               f'@{api_config.DB_HOST}/{api_config.DB_NAME}'
+    engine = sqlalchemy.create_engine(conn_url)
+
+    with engine.connect() as conn:
+        statement = sqlalchemy.sql.text("TRUNCATE TABLE stock_price_delete")
+        print(statement)
+        conn.execute(statement)
+
+    exec(open('data_import/populate_prices.py').read())
+
+
 def main():
     # create page with information
     url = "https://www.hs-aalen.de/uploads/mediapool/media/file/28860/Logo_HSAA.png"
@@ -90,6 +103,11 @@ def main():
         st.session_state["key"] = top_symbols_prep
 
     st.markdown(st.session_state["key"])
+
+    # button to populate price table
+    execute_population = st.button("Fetch price data")
+    if execute_population:
+        update_prices()
 
 
 if __name__ == "__main__":

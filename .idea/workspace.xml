@@ -2,16 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9318d6ae-797f-4069-97d7-030526dc95e7" name="Changes" comment="Updated winners dashboard from rainbow colormap to RdYlGn">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/create_tables/commands.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/create_tables/run_sql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/69cf18b3-136a-4003-aac8-019e867bc696.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/69cf18b3-136a-4003-aac8-019e867bc696.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/69cf18b3-136a-4003-aac8-019e867bc696/storage_v2/_src_/database/etfdb.VYzFBQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/69cf18b3-136a-4003-aac8-019e867bc696/storage_v2/_src_/database/etfdb.VYzFBQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/timescaledb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/timescaledb.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webResources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/analysis/data_prep_and_analysis.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/analysis/commands.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/analysis/commands.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/analysis/create_tables.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/create_tables.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/home.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/home.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Pattern.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Pattern.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_home.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_home.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +38,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2DCJuudFWGnEEFHBqrHukR632qQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -44,13 +48,21 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../timescale_archive" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/create_tables" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\esse\Documents\timescaledb\src\create_tables" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\esse\Documents\timescaledb\src" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.main">
-    <configuration name="data_prep_and_analysis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="delete_me" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="timescaledb" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -58,12 +70,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/analysis" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/analysis/data_prep_and_analysis.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/delete_me.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -116,6 +128,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="populate_prices" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="timescaledb" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/data_import" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/data_import/populate_prices.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="run_sql" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="timescaledb" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -138,35 +172,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="run_timescale" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="timescaledb" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/analysis" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/analysis/run_timescale.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.home" />
+        <item itemvalue="Python.delete_me" />
         <item itemvalue="Python.run_sql" />
-        <item itemvalue="Python.run_timescale" />
-        <item itemvalue="Python.data_prep_and_analysis" />
+        <item itemvalue="Python.populate_prices" />
+        <item itemvalue="Python.home" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +191,9 @@
       <option name="presentableId" value="Default" />
       <updated>1660197358972</updated>
       <workItem from="1660197360086" duration="7766000" />
-      <workItem from="1660233000986" duration="3273000" />
+      <workItem from="1660233000986" duration="3668000" />
+      <workItem from="1660277914671" duration="2259000" />
+      <workItem from="1660396893439" duration="9075000" />
     </task>
     <task id="LOCAL-00001" summary="Updated winners dashboard from rainbow colormap to RdYlGn">
       <created>1660224566854</created>
@@ -210,10 +224,12 @@
     <option name="LAST_COMMIT_MESSAGE" value="Updated winners dashboard from rainbow colormap to RdYlGn" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/timescaledb$run_sql.coverage" NAME="run_sql Coverage Results" MODIFIED="1660235809697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/analysis" />
+    <SUITE FILE_PATH="coverage/timescaledb$run_sql.coverage" NAME="run_sql Coverage Results" MODIFIED="1660419112123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/analysis" />
     <SUITE FILE_PATH="coverage/timescaledb$data_prep_and_analysis.coverage" NAME="data_prep_and_analysis Coverage Results" MODIFIED="1660230657068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/analysis" />
     <SUITE FILE_PATH="coverage/timescaledb$run_timescale.coverage" NAME="run_timescale Coverage Results" MODIFIED="1660234271452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/analysis" />
+    <SUITE FILE_PATH="coverage/timescaledb$populate_prices.coverage" NAME="populate_prices Coverage Results" MODIFIED="1660418807076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/data_import" />
+    <SUITE FILE_PATH="coverage/timescaledb$delete_me.coverage" NAME="delete_me Coverage Results" MODIFIED="1660419823513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/timescaledb$home.coverage" NAME="home Coverage Results" MODIFIED="1660235911265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/timescaledb$main.coverage" NAME="main Coverage Results" MODIFIED="1660235925008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/timescaledb$main.coverage" NAME="main Coverage Results" MODIFIED="1660418928926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
 </project>

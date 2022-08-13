@@ -115,10 +115,10 @@ def main():
     """, unsafe_allow_html=True)
 
     st.header('Section 1')
-    st.write('Bullish Engulfing')
+    st.write('**Bullish Engulfing**')
     plot_bulls(i_date, data_bull_df, daily_bar_df, number_x_entries)
     st.header('Section 2')
-    st.write('Triple Closing and Volume Increase')
+    st.write('**Triple Closing and Volume Increase**')
     plot_threes(i_date, data_three_df, daily_bar_df, number_x_entries)
 
 

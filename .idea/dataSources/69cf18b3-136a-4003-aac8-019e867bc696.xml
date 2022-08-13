@@ -3,9 +3,9 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.31">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>29963</IntrospectionStateNumber>
+      <IntrospectionStateNumber>30406</IntrospectionStateNumber>
       <ServerVersion>14.2</ServerVersion>
-      <StartupTime>1660232985</StartupTime>
+      <StartupTime>1660396878</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -819,7 +819,7 @@ true posixrules
 16980||10|C|G
 16980||-9223372036854775808|U|G
 16980||10|U|G</Grants>
-      <IntrospectionStateNumber>29964</IntrospectionStateNumber>
+      <IntrospectionStateNumber>30407</IntrospectionStateNumber>
       <ObjectId>17584</ObjectId>
       <Relations>sequence|table|16991|16992|1
 sequence|table|17025|17026|1
@@ -828,7 +828,6 @@ sequence|table|17057|17058|1
 sequence|table|17072|17073|1
 sequence|table|17140|17141|1
 sequence|table|25756|25757|1
-sequence|table|215185|215186|1
 </Relations>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4295,7 +4294,7 @@ sequence|table|215185|215186|1
     <schema id="268" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>29964</IntrospectionStateNumber>
+      <IntrospectionStateNumber>30407</IntrospectionStateNumber>
       <ObjectId>2200</ObjectId>
       <StateNumber>527</StateNumber>
       <OwnerName>postgres</OwnerName>
@@ -5174,1748 +5173,1626 @@ DROP TABLE</Tags>
       <LanguageName>plpgsql</LanguageName>
       <OwnerName>postgres</OwnerName>
     </routine>
-    <sequence id="359" parent="268" name="stock_delete_id_seq">
-      <DataType>integer|0s</DataType>
-      <ObjectId>215185</ObjectId>
-      <StateNumber>16998</StateNumber>
-      <OwnerName>postgres</OwnerName>
-    </sequence>
-    <sequence id="360" parent="268" name="stock_id_seq">
+    <sequence id="359" parent="268" name="stock_id_seq">
       <DataType>integer|0s</DataType>
       <ObjectId>25756</ObjectId>
       <StateNumber>764</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <table id="361" parent="268" name="daily_bars_delete">
-      <ObjectId>231944</ObjectId>
-      <StateNumber>29953</StateNumber>
-      <AccessMethodId>2</AccessMethodId>
-      <OwnerName>postgres</OwnerName>
-    </table>
-    <table id="362" parent="268" name="daily_stock_return_delete">
-      <ObjectId>231949</ObjectId>
-      <StateNumber>29958</StateNumber>
-      <AccessMethodId>2</AccessMethodId>
-      <OwnerName>postgres</OwnerName>
-    </table>
-    <table id="363" parent="268" name="return_histograms">
+    <table id="360" parent="268" name="return_histograms">
       <ObjectId>92305</ObjectId>
       <StateNumber>2875</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="364" parent="268" name="return_histograms_delete">
-      <ObjectId>231954</ObjectId>
-      <StateNumber>29959</StateNumber>
-      <AccessMethodId>2</AccessMethodId>
-      <OwnerName>postgres</OwnerName>
-    </table>
-    <table id="365" parent="268" name="stock">
+    <table id="361" parent="268" name="stock">
       <ObjectId>25757</ObjectId>
       <StateNumber>765</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="366" parent="268" name="stock_delete">
-      <ObjectId>215186</ObjectId>
-      <StateNumber>29706</StateNumber>
-      <AccessMethodId>2</AccessMethodId>
-      <OwnerName>postgres</OwnerName>
-    </table>
-    <table id="367" parent="268" name="stock_price">
+    <table id="362" parent="268" name="stock_price">
       <ObjectId>25974</ObjectId>
       <StateNumber>1631</StateNumber>
       <SuccessorIds>34328,34341,34354,34367,34380,58904,58919,58934,58949,58964,67531,67752,100497,100512,125073,182417,182432,182447</SuccessorIds>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="368" parent="268" name="stock_price_delete">
+    <table id="363" parent="268" name="stock_price_delete">
       <ObjectId>215345</ObjectId>
-      <StateNumber>29711</StateNumber>
-      <SuccessorIds>215387,215402,215417,215432,215447</SuccessorIds>
+      <StateNumber>30375</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="369" parent="268" name="stock_price_im">
+    <table id="364" parent="268" name="stock_price_im">
       <ObjectId>125249</ObjectId>
       <StateNumber>3580</StateNumber>
       <SuccessorIds>125264,125270,125276,125282,125288,125294,125300,125306,125312,125318,125324,125330,125336,125342</SuccessorIds>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="370" parent="268" name="stock_price_impute">
-      <ObjectId>231687</ObjectId>
-      <StateNumber>29914</StateNumber>
-      <SuccessorIds>231692,231698,231704,231710,231716,231722,231728,231734,231740,231746,231752,231758,231764,231770,231776,231782,231788,231794,231800,231806,231812,231818,231824,231830,231836,231842</SuccessorIds>
-      <AccessMethodId>2</AccessMethodId>
-      <OwnerName>postgres</OwnerName>
-    </table>
-    <view id="371" parent="268" name="daily_bars">
+    <view id="365" parent="268" name="daily_bars">
       <ObjectId>125493</ObjectId>
       <SourceTextLength>2296</SourceTextLength>
       <StateNumber>3599</StateNumber>
       <OwnerName>postgres</OwnerName>
     </view>
-    <view id="372" parent="268" name="hourly_bars">
+    <view id="366" parent="268" name="hourly_bars">
       <ObjectId>34464</ObjectId>
       <SourceTextLength>2046</SourceTextLength>
       <StateNumber>1637</StateNumber>
       <OwnerName>postgres</OwnerName>
     </view>
-    <argument id="373" parent="273">
+    <argument id="367" parent="273">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>anyelement|0s</DataType>
     </argument>
-    <argument id="374" parent="273">
+    <argument id="368" parent="273">
       <DataType>anyelement|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="375" parent="273">
+    <argument id="369" parent="273">
       <DataType>&quot;any&quot;|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="376" parent="274">
+    <argument id="370" parent="274">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>integer[]|0s</DataType>
     </argument>
-    <argument id="377" parent="274">
+    <argument id="371" parent="274">
       <DataType>double precision|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="378" parent="274">
+    <argument id="372" parent="274">
       <DataType>double precision|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="379" parent="274">
+    <argument id="373" parent="274">
       <DataType>double precision|0s</DataType>
       <Position>3</Position>
     </argument>
-    <argument id="380" parent="274">
+    <argument id="374" parent="274">
       <DataType>integer|0s</DataType>
       <Position>4</Position>
     </argument>
-    <argument id="381" parent="275">
+    <argument id="375" parent="275">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>anyelement|0s</DataType>
     </argument>
-    <argument id="382" parent="275">
+    <argument id="376" parent="275">
       <DataType>anyelement|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="383" parent="275">
+    <argument id="377" parent="275">
       <DataType>&quot;any&quot;|0s</DataType>
       <Position>2</Position>
     </argument>
-    <column id="384" parent="276" name="day">
+    <column id="378" parent="276" name="day">
       <DataType>timestamp|0s</DataType>
       <Position>1</Position>
       <StateNumber>3860</StateNumber>
     </column>
-    <column id="385" parent="276" name="symbol">
+    <column id="379" parent="276" name="symbol">
       <DataType>text|0s</DataType>
       <Position>2</Position>
       <StateNumber>3860</StateNumber>
     </column>
-    <column id="386" parent="276" name="stock_id">
+    <column id="380" parent="276" name="stock_id">
       <DataType>integer|0s</DataType>
       <Position>3</Position>
       <StateNumber>3860</StateNumber>
     </column>
-    <column id="387" parent="276" name="open">
+    <column id="381" parent="276" name="open">
       <DataType>numeric|0s</DataType>
       <Position>4</Position>
       <StateNumber>3860</StateNumber>
     </column>
-    <column id="388" parent="276" name="close">
+    <column id="382" parent="276" name="close">
       <DataType>numeric|0s</DataType>
       <Position>5</Position>
       <StateNumber>3860</StateNumber>
     </column>
-    <column id="389" parent="276" name="previous_open">
+    <column id="383" parent="276" name="previous_open">
       <DataType>numeric|0s</DataType>
       <Position>6</Position>
       <StateNumber>3860</StateNumber>
     </column>
-    <column id="390" parent="276" name="previous_close">
+    <column id="384" parent="276" name="previous_close">
       <DataType>numeric|0s</DataType>
       <Position>7</Position>
       <StateNumber>3860</StateNumber>
     </column>
-    <column id="391" parent="277" name="day">
+    <column id="385" parent="277" name="day">
       <DataType>timestamp|0s</DataType>
       <Position>1</Position>
       <StateNumber>3768</StateNumber>
     </column>
-    <column id="392" parent="277" name="symbol">
+    <column id="386" parent="277" name="symbol">
       <DataType>text|0s</DataType>
       <Position>2</Position>
       <StateNumber>3768</StateNumber>
     </column>
-    <column id="393" parent="277" name="stock_id">
+    <column id="387" parent="277" name="stock_id">
       <DataType>integer|0s</DataType>
       <Position>3</Position>
       <StateNumber>3768</StateNumber>
     </column>
-    <column id="394" parent="277" name="max_daily_factor">
+    <column id="388" parent="277" name="max_daily_factor">
       <DataType>numeric|0s</DataType>
       <Position>4</Position>
       <StateNumber>3768</StateNumber>
     </column>
-    <column id="395" parent="278" name="stock_id">
+    <column id="389" parent="278" name="stock_id">
       <DataType>integer|0s</DataType>
       <Position>1</Position>
       <StateNumber>3788</StateNumber>
     </column>
-    <column id="396" parent="278" name="day">
+    <column id="390" parent="278" name="day">
       <DataType>timestamp|0s</DataType>
       <Position>2</Position>
       <StateNumber>3788</StateNumber>
     </column>
-    <column id="397" parent="278" name="open">
+    <column id="391" parent="278" name="open">
       <DataType>numeric|0s</DataType>
       <Position>3</Position>
       <StateNumber>3788</StateNumber>
     </column>
-    <column id="398" parent="278" name="close">
+    <column id="392" parent="278" name="close">
       <DataType>numeric|0s</DataType>
       <Position>4</Position>
       <StateNumber>3788</StateNumber>
     </column>
-    <column id="399" parent="278" name="intraday_change_in_percent">
+    <column id="393" parent="278" name="intraday_change_in_percent">
       <DataType>numeric|0s</DataType>
       <Position>5</Position>
       <StateNumber>3788</StateNumber>
     </column>
-    <column id="400" parent="279" name="symbol">
+    <column id="394" parent="279" name="symbol">
       <DataType>text|0s</DataType>
       <Position>1</Position>
       <StateNumber>3725</StateNumber>
     </column>
-    <column id="401" parent="279" name="day">
+    <column id="395" parent="279" name="day">
       <DataType>timestamp|0s</DataType>
       <Position>2</Position>
       <StateNumber>3725</StateNumber>
     </column>
-    <column id="402" parent="279" name="close">
+    <column id="396" parent="279" name="close">
       <DataType>numeric|0s</DataType>
       <Position>3</Position>
       <StateNumber>3725</StateNumber>
     </column>
-    <column id="403" parent="279" name="sma_14">
+    <column id="397" parent="279" name="sma_14">
       <DataType>numeric|0s</DataType>
       <Position>4</Position>
       <StateNumber>3725</StateNumber>
     </column>
-    <column id="404" parent="280" name="day">
+    <column id="398" parent="280" name="day">
       <DataType>timestamp|0s</DataType>
       <Position>1</Position>
       <StateNumber>3846</StateNumber>
     </column>
-    <column id="405" parent="280" name="symbol">
+    <column id="399" parent="280" name="symbol">
       <DataType>text|0s</DataType>
       <Position>2</Position>
       <StateNumber>3846</StateNumber>
     </column>
-    <column id="406" parent="280" name="stock_id">
+    <column id="400" parent="280" name="stock_id">
       <DataType>integer|0s</DataType>
       <Position>3</Position>
       <StateNumber>3846</StateNumber>
     </column>
-    <column id="407" parent="280" name="close">
+    <column id="401" parent="280" name="close">
       <DataType>numeric|0s</DataType>
       <Position>4</Position>
       <StateNumber>3846</StateNumber>
     </column>
-    <column id="408" parent="280" name="volume">
+    <column id="402" parent="280" name="volume">
       <DataType>numeric|0s</DataType>
       <Position>5</Position>
       <StateNumber>3846</StateNumber>
     </column>
-    <column id="409" parent="280" name="previous_close">
+    <column id="403" parent="280" name="previous_close">
       <DataType>numeric|0s</DataType>
       <Position>6</Position>
       <StateNumber>3846</StateNumber>
     </column>
-    <column id="410" parent="280" name="previous_volume">
+    <column id="404" parent="280" name="previous_volume">
       <DataType>numeric|0s</DataType>
       <Position>7</Position>
       <StateNumber>3846</StateNumber>
     </column>
-    <column id="411" parent="280" name="previous_previous_close">
+    <column id="405" parent="280" name="previous_previous_close">
       <DataType>numeric|0s</DataType>
       <Position>8</Position>
       <StateNumber>3846</StateNumber>
     </column>
-    <column id="412" parent="280" name="previous_previous_volume">
+    <column id="406" parent="280" name="previous_previous_volume">
       <DataType>numeric|0s</DataType>
       <Position>9</Position>
       <StateNumber>3846</StateNumber>
     </column>
-    <column id="413" parent="280" name="previous_previous_previous_close">
+    <column id="407" parent="280" name="previous_previous_previous_close">
       <DataType>numeric|0s</DataType>
       <Position>10</Position>
       <StateNumber>3846</StateNumber>
     </column>
-    <column id="414" parent="280" name="previous_previous_previous_volume">
+    <column id="408" parent="280" name="previous_previous_previous_volume">
       <DataType>numeric|0s</DataType>
       <Position>11</Position>
       <StateNumber>3846</StateNumber>
     </column>
-    <argument id="415" parent="282">
+    <argument id="409" parent="282">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>integer|0s</DataType>
     </argument>
-    <argument id="416" parent="282" name="hypertable">
+    <argument id="410" parent="282" name="hypertable">
       <DataType>regclass|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="417" parent="282" name="compress_after">
+    <argument id="411" parent="282" name="compress_after">
       <DataType>&quot;any&quot;|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="418" parent="282" name="if_not_exists">
+    <argument id="412" parent="282" name="if_not_exists">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>false</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="419" parent="283">
+    <argument id="413" parent="283">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>integer|0s</DataType>
     </argument>
-    <argument id="420" parent="283" name="continuous_aggregate">
+    <argument id="414" parent="283" name="continuous_aggregate">
       <DataType>regclass|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="421" parent="283" name="start_offset">
+    <argument id="415" parent="283" name="start_offset">
       <DataType>&quot;any&quot;|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="422" parent="283" name="end_offset">
+    <argument id="416" parent="283" name="end_offset">
       <DataType>&quot;any&quot;|0s</DataType>
       <Position>3</Position>
     </argument>
-    <argument id="423" parent="283" name="schedule_interval">
+    <argument id="417" parent="283" name="schedule_interval">
       <DataType>interval|0s</DataType>
       <Position>4</Position>
     </argument>
-    <argument id="424" parent="283" name="if_not_exists">
+    <argument id="418" parent="283" name="if_not_exists">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>false</DefaultExpression>
       <Position>5</Position>
     </argument>
-    <argument id="425" parent="284">
+    <argument id="419" parent="284">
       <ArgumentDirection>T</ArgumentDirection>
       <DataType>table(&quot;node_name&quot; name, &quot;host&quot; text, &quot;port&quot; integer, &quot;database&quot; name, &quot;node_created&quot; boolean, &quot;database_created&quot; boolean, &quot;extension_created&quot; boolean)|0v</DataType>
     </argument>
-    <argument id="426" parent="284" name="node_name">
+    <argument id="420" parent="284" name="node_name">
       <DataType>name|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="427" parent="284" name="host">
+    <argument id="421" parent="284" name="host">
       <DataType>text|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="428" parent="284" name="database">
+    <argument id="422" parent="284" name="database">
       <DataType>name|0s</DataType>
       <DefaultExpression>NULL::name</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="429" parent="284" name="port">
+    <argument id="423" parent="284" name="port">
       <DataType>integer|0s</DataType>
       <DefaultExpression>NULL::integer</DefaultExpression>
       <Position>4</Position>
     </argument>
-    <argument id="430" parent="284" name="if_not_exists">
+    <argument id="424" parent="284" name="if_not_exists">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>false</DefaultExpression>
       <Position>5</Position>
     </argument>
-    <argument id="431" parent="284" name="bootstrap">
+    <argument id="425" parent="284" name="bootstrap">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>true</DefaultExpression>
       <Position>6</Position>
     </argument>
-    <argument id="432" parent="284" name="password">
+    <argument id="426" parent="284" name="password">
       <DataType>text|0s</DataType>
       <DefaultExpression>NULL::text</DefaultExpression>
       <Position>7</Position>
     </argument>
-    <argument id="433" parent="285">
+    <argument id="427" parent="285">
       <ArgumentDirection>T</ArgumentDirection>
       <DataType>table(&quot;dimension_id&quot; integer, &quot;schema_name&quot; name, &quot;table_name&quot; name, &quot;column_name&quot; name, &quot;created&quot; boolean)|0v</DataType>
     </argument>
-    <argument id="434" parent="285" name="hypertable">
+    <argument id="428" parent="285" name="hypertable">
       <DataType>regclass|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="435" parent="285" name="column_name">
+    <argument id="429" parent="285" name="column_name">
       <DataType>name|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="436" parent="285" name="number_partitions">
+    <argument id="430" parent="285" name="number_partitions">
       <DataType>integer|0s</DataType>
       <DefaultExpression>NULL::integer</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="437" parent="285" name="chunk_time_interval">
+    <argument id="431" parent="285" name="chunk_time_interval">
       <DataType>anyelement|0s</DataType>
       <DefaultExpression>NULL::bigint</DefaultExpression>
       <Position>4</Position>
     </argument>
-    <argument id="438" parent="285" name="partitioning_func">
+    <argument id="432" parent="285" name="partitioning_func">
       <DataType>regproc|0s</DataType>
       <DefaultExpression>NULL::regproc</DefaultExpression>
       <Position>5</Position>
     </argument>
-    <argument id="439" parent="285" name="if_not_exists">
+    <argument id="433" parent="285" name="if_not_exists">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>false</DefaultExpression>
       <Position>6</Position>
     </argument>
-    <argument id="440" parent="286">
+    <argument id="434" parent="286">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>integer|0s</DataType>
     </argument>
-    <argument id="441" parent="286" name="proc">
+    <argument id="435" parent="286" name="proc">
       <DataType>regproc|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="442" parent="286" name="schedule_interval">
+    <argument id="436" parent="286" name="schedule_interval">
       <DataType>interval|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="443" parent="286" name="config">
+    <argument id="437" parent="286" name="config">
       <DataType>jsonb|0s</DataType>
       <DefaultExpression>NULL::jsonb</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="444" parent="286" name="initial_start">
+    <argument id="438" parent="286" name="initial_start">
       <DataType>timestamp with time zone|0s</DataType>
       <DefaultExpression>NULL::timestamp with time zone</DefaultExpression>
       <Position>4</Position>
     </argument>
-    <argument id="445" parent="286" name="scheduled">
+    <argument id="439" parent="286" name="scheduled">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>true</DefaultExpression>
       <Position>5</Position>
     </argument>
-    <argument id="446" parent="287">
+    <argument id="440" parent="287">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>integer|0s</DataType>
     </argument>
-    <argument id="447" parent="287" name="hypertable">
+    <argument id="441" parent="287" name="hypertable">
       <DataType>regclass|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="448" parent="287" name="index_name">
+    <argument id="442" parent="287" name="index_name">
       <DataType>name|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="449" parent="287" name="if_not_exists">
+    <argument id="443" parent="287" name="if_not_exists">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>false</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="450" parent="288">
+    <argument id="444" parent="288">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>integer|0s</DataType>
     </argument>
-    <argument id="451" parent="288" name="relation">
+    <argument id="445" parent="288" name="relation">
       <DataType>regclass|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="452" parent="288" name="drop_after">
+    <argument id="446" parent="288" name="drop_after">
       <DataType>&quot;any&quot;|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="453" parent="288" name="if_not_exists">
+    <argument id="447" parent="288" name="if_not_exists">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>false</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="454" parent="289">
+    <argument id="448" parent="289">
       <ArgumentDirection>T</ArgumentDirection>
       <DataType>table(&quot;job_id&quot; integer, &quot;schedule_interval&quot; interval, &quot;max_runtime&quot; interval, &quot;max_retries&quot; integer, &quot;retry_period&quot; interval, &quot;scheduled&quot; boolean, &quot;config&quot; jsonb, &quot;next_start&quot; timestamp with time zone)|0v</DataType>
     </argument>
-    <argument id="455" parent="289" name="job_id">
+    <argument id="449" parent="289" name="job_id">
       <DataType>integer|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="456" parent="289" name="schedule_interval">
+    <argument id="450" parent="289" name="schedule_interval">
       <DataType>interval|0s</DataType>
       <DefaultExpression>NULL::interval</DefaultExpression>
       <Position>2</Position>
     </argument>
-    <argument id="457" parent="289" name="max_runtime">
+    <argument id="451" parent="289" name="max_runtime">
       <DataType>interval|0s</DataType>
       <DefaultExpression>NULL::interval</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="458" parent="289" name="max_retries">
+    <argument id="452" parent="289" name="max_retries">
       <DataType>integer|0s</DataType>
       <DefaultExpression>NULL::integer</DefaultExpression>
       <Position>4</Position>
     </argument>
-    <argument id="459" parent="289" name="retry_period">
+    <argument id="453" parent="289" name="retry_period">
       <DataType>interval|0s</DataType>
       <DefaultExpression>NULL::interval</DefaultExpression>
       <Position>5</Position>
     </argument>
-    <argument id="460" parent="289" name="scheduled">
+    <argument id="454" parent="289" name="scheduled">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>NULL::boolean</DefaultExpression>
       <Position>6</Position>
     </argument>
-    <argument id="461" parent="289" name="config">
+    <argument id="455" parent="289" name="config">
       <DataType>jsonb|0s</DataType>
       <DefaultExpression>NULL::jsonb</DefaultExpression>
       <Position>7</Position>
     </argument>
-    <argument id="462" parent="289" name="next_start">
+    <argument id="456" parent="289" name="next_start">
       <DataType>timestamp with time zone|0s</DataType>
       <DefaultExpression>NULL::timestamp with time zone</DefaultExpression>
       <Position>8</Position>
     </argument>
-    <argument id="463" parent="289" name="if_exists">
+    <argument id="457" parent="289" name="if_exists">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>false</DefaultExpression>
       <Position>9</Position>
     </argument>
-    <argument id="464" parent="290">
+    <argument id="458" parent="290">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>bigint|0s</DataType>
     </argument>
-    <argument id="465" parent="290" name="relation">
+    <argument id="459" parent="290" name="relation">
       <DataType>regclass|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="466" parent="291">
+    <argument id="460" parent="291">
       <ArgumentDirection>T</ArgumentDirection>
       <DataType>table(&quot;hypertable_id&quot; integer, &quot;node_hypertable_id&quot; integer, &quot;node_name&quot; name)|0v</DataType>
     </argument>
-    <argument id="467" parent="291" name="node_name">
+    <argument id="461" parent="291" name="node_name">
       <DataType>name|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="468" parent="291" name="hypertable">
+    <argument id="462" parent="291" name="hypertable">
       <DataType>regclass|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="469" parent="291" name="if_not_attached">
+    <argument id="463" parent="291" name="if_not_attached">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>false</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="470" parent="291" name="repartition">
+    <argument id="464" parent="291" name="repartition">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>true</DefaultExpression>
       <Position>4</Position>
     </argument>
-    <argument id="471" parent="292">
+    <argument id="465" parent="292">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>void|0s</DataType>
     </argument>
-    <argument id="472" parent="292" name="tablespace">
+    <argument id="466" parent="292" name="tablespace">
       <DataType>name|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="473" parent="292" name="hypertable">
+    <argument id="467" parent="292" name="hypertable">
       <DataType>regclass|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="474" parent="292" name="if_not_attached">
+    <argument id="468" parent="292" name="if_not_attached">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>false</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="475" parent="293">
+    <argument id="469" parent="293">
       <ArgumentDirection>T</ArgumentDirection>
       <DataType>table(&quot;chunk_schema&quot; name, &quot;chunk_name&quot; name, &quot;compression_status&quot; text, &quot;before_compression_table_bytes&quot; bigint, &quot;before_compression_index_bytes&quot; bigint, &quot;before_compression_toast_bytes&quot; bigint, &quot;before_compression_total_bytes&quot; bigint, &quot;after_compression_table_bytes&quot; bigint, &quot;after_compression_index_bytes&quot; bigint, &quot;after_compression_toast_bytes&quot; bigint, &quot;after_compression_total_bytes&quot; bigint, &quot;node_name&quot; name)|0v</DataType>
     </argument>
-    <argument id="476" parent="293" name="hypertable">
+    <argument id="470" parent="293" name="hypertable">
       <DataType>regclass|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="477" parent="294">
+    <argument id="471" parent="294">
       <ArgumentDirection>T</ArgumentDirection>
       <DataType>table(&quot;chunk_schema&quot; name, &quot;chunk_name&quot; name, &quot;table_bytes&quot; bigint, &quot;index_bytes&quot; bigint, &quot;toast_bytes&quot; bigint, &quot;total_bytes&quot; bigint, &quot;node_name&quot; name)|0v</DataType>
     </argument>
-    <argument id="478" parent="294" name="hypertable">
+    <argument id="472" parent="294" name="hypertable">
       <DataType>regclass|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="479" parent="295">
+    <argument id="473" parent="295">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>regclass|0s</DataType>
     </argument>
-    <argument id="480" parent="295" name="uncompressed_chunk">
+    <argument id="474" parent="295" name="uncompressed_chunk">
       <DataType>regclass|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="481" parent="295" name="if_not_compressed">
+    <argument id="475" parent="295" name="if_not_compressed">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>false</DefaultExpression>
       <Position>2</Position>
     </argument>
-    <argument id="482" parent="296">
+    <argument id="476" parent="296">
       <ArgumentDirection>T</ArgumentDirection>
       <DataType>table(&quot;hypertable_id&quot; integer, &quot;schema_name&quot; name, &quot;table_name&quot; name, &quot;created&quot; boolean)|0v</DataType>
     </argument>
-    <argument id="483" parent="296" name="relation">
+    <argument id="477" parent="296" name="relation">
       <DataType>regclass|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="484" parent="296" name="time_column_name">
+    <argument id="478" parent="296" name="time_column_name">
       <DataType>name|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="485" parent="296" name="partitioning_column">
+    <argument id="479" parent="296" name="partitioning_column">
       <DataType>name|0s</DataType>
       <DefaultExpression>NULL::name</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="486" parent="296" name="number_partitions">
+    <argument id="480" parent="296" name="number_partitions">
       <DataType>integer|0s</DataType>
       <DefaultExpression>NULL::integer</DefaultExpression>
       <Position>4</Position>
     </argument>
-    <argument id="487" parent="296" name="associated_schema_name">
+    <argument id="481" parent="296" name="associated_schema_name">
       <DataType>name|0s</DataType>
       <DefaultExpression>NULL::name</DefaultExpression>
       <Position>5</Position>
     </argument>
-    <argument id="488" parent="296" name="associated_table_prefix">
+    <argument id="482" parent="296" name="associated_table_prefix">
       <DataType>name|0s</DataType>
       <DefaultExpression>NULL::name</DefaultExpression>
       <Position>6</Position>
     </argument>
-    <argument id="489" parent="296" name="chunk_time_interval">
+    <argument id="483" parent="296" name="chunk_time_interval">
       <DataType>anyelement|0s</DataType>
       <DefaultExpression>NULL::bigint</DefaultExpression>
       <Position>7</Position>
     </argument>
-    <argument id="490" parent="296" name="create_default_indexes">
+    <argument id="484" parent="296" name="create_default_indexes">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>true</DefaultExpression>
       <Position>8</Position>
     </argument>
-    <argument id="491" parent="296" name="if_not_exists">
+    <argument id="485" parent="296" name="if_not_exists">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>false</DefaultExpression>
       <Position>9</Position>
     </argument>
-    <argument id="492" parent="296" name="partitioning_func">
+    <argument id="486" parent="296" name="partitioning_func">
       <DataType>regproc|0s</DataType>
       <DefaultExpression>NULL::regproc</DefaultExpression>
       <Position>10</Position>
     </argument>
-    <argument id="493" parent="296" name="migrate_data">
+    <argument id="487" parent="296" name="migrate_data">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>false</DefaultExpression>
       <Position>11</Position>
     </argument>
-    <argument id="494" parent="296" name="chunk_target_size">
+    <argument id="488" parent="296" name="chunk_target_size">
       <DataType>text|0s</DataType>
       <DefaultExpression>NULL::text</DefaultExpression>
       <Position>12</Position>
     </argument>
-    <argument id="495" parent="296" name="chunk_sizing_func">
+    <argument id="489" parent="296" name="chunk_sizing_func">
       <DataType>regproc|0s</DataType>
       <DefaultExpression>&apos;_timescaledb_internal.calculate_chunk_interval&apos;::regproc</DefaultExpression>
       <Position>13</Position>
     </argument>
-    <argument id="496" parent="296" name="time_partitioning_func">
+    <argument id="490" parent="296" name="time_partitioning_func">
       <DataType>regproc|0s</DataType>
       <DefaultExpression>NULL::regproc</DefaultExpression>
       <Position>14</Position>
     </argument>
-    <argument id="497" parent="296" name="replication_factor">
+    <argument id="491" parent="296" name="replication_factor">
       <DataType>integer|0s</DataType>
       <DefaultExpression>1</DefaultExpression>
       <Position>15</Position>
     </argument>
-    <argument id="498" parent="296" name="data_nodes">
+    <argument id="492" parent="296" name="data_nodes">
       <DataType>name[]|0s</DataType>
       <DefaultExpression>NULL::name[]</DefaultExpression>
       <Position>16</Position>
     </argument>
-    <argument id="499" parent="297">
+    <argument id="493" parent="297">
       <ArgumentDirection>T</ArgumentDirection>
       <DataType>table(&quot;node_name&quot; name, &quot;node_type&quot; text, &quot;restore_point&quot; pg_lsn)|0v</DataType>
     </argument>
-    <argument id="500" parent="297" name="name">
+    <argument id="494" parent="297" name="name">
       <DataType>text|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="501" parent="298">
+    <argument id="495" parent="298">
       <ArgumentDirection>T</ArgumentDirection>
       <DataType>table(&quot;hypertable_id&quot; integer, &quot;schema_name&quot; name, &quot;table_name&quot; name, &quot;created&quot; boolean)|0v</DataType>
     </argument>
-    <argument id="502" parent="298" name="relation">
+    <argument id="496" parent="298" name="relation">
       <DataType>regclass|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="503" parent="298" name="time_column_name">
+    <argument id="497" parent="298" name="time_column_name">
       <DataType>name|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="504" parent="298" name="partitioning_column">
+    <argument id="498" parent="298" name="partitioning_column">
       <DataType>name|0s</DataType>
       <DefaultExpression>NULL::name</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="505" parent="298" name="number_partitions">
+    <argument id="499" parent="298" name="number_partitions">
       <DataType>integer|0s</DataType>
       <DefaultExpression>NULL::integer</DefaultExpression>
       <Position>4</Position>
     </argument>
-    <argument id="506" parent="298" name="associated_schema_name">
+    <argument id="500" parent="298" name="associated_schema_name">
       <DataType>name|0s</DataType>
       <DefaultExpression>NULL::name</DefaultExpression>
       <Position>5</Position>
     </argument>
-    <argument id="507" parent="298" name="associated_table_prefix">
+    <argument id="501" parent="298" name="associated_table_prefix">
       <DataType>name|0s</DataType>
       <DefaultExpression>NULL::name</DefaultExpression>
       <Position>6</Position>
     </argument>
-    <argument id="508" parent="298" name="chunk_time_interval">
+    <argument id="502" parent="298" name="chunk_time_interval">
       <DataType>anyelement|0s</DataType>
       <DefaultExpression>NULL::bigint</DefaultExpression>
       <Position>7</Position>
     </argument>
-    <argument id="509" parent="298" name="create_default_indexes">
+    <argument id="503" parent="298" name="create_default_indexes">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>true</DefaultExpression>
       <Position>8</Position>
     </argument>
-    <argument id="510" parent="298" name="if_not_exists">
+    <argument id="504" parent="298" name="if_not_exists">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>false</DefaultExpression>
       <Position>9</Position>
     </argument>
-    <argument id="511" parent="298" name="partitioning_func">
+    <argument id="505" parent="298" name="partitioning_func">
       <DataType>regproc|0s</DataType>
       <DefaultExpression>NULL::regproc</DefaultExpression>
       <Position>10</Position>
     </argument>
-    <argument id="512" parent="298" name="migrate_data">
+    <argument id="506" parent="298" name="migrate_data">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>false</DefaultExpression>
       <Position>11</Position>
     </argument>
-    <argument id="513" parent="298" name="chunk_target_size">
+    <argument id="507" parent="298" name="chunk_target_size">
       <DataType>text|0s</DataType>
       <DefaultExpression>NULL::text</DefaultExpression>
       <Position>12</Position>
     </argument>
-    <argument id="514" parent="298" name="chunk_sizing_func">
+    <argument id="508" parent="298" name="chunk_sizing_func">
       <DataType>regproc|0s</DataType>
       <DefaultExpression>&apos;_timescaledb_internal.calculate_chunk_interval&apos;::regproc</DefaultExpression>
       <Position>13</Position>
     </argument>
-    <argument id="515" parent="298" name="time_partitioning_func">
+    <argument id="509" parent="298" name="time_partitioning_func">
       <DataType>regproc|0s</DataType>
       <DefaultExpression>NULL::regproc</DefaultExpression>
       <Position>14</Position>
     </argument>
-    <argument id="516" parent="298" name="replication_factor">
+    <argument id="510" parent="298" name="replication_factor">
       <DataType>integer|0s</DataType>
       <DefaultExpression>NULL::integer</DefaultExpression>
       <Position>15</Position>
     </argument>
-    <argument id="517" parent="298" name="data_nodes">
+    <argument id="511" parent="298" name="data_nodes">
       <DataType>name[]|0s</DataType>
       <DefaultExpression>NULL::name[]</DefaultExpression>
       <Position>16</Position>
     </argument>
-    <argument id="518" parent="299">
+    <argument id="512" parent="299">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>regclass|0s</DataType>
     </argument>
-    <argument id="519" parent="299" name="uncompressed_chunk">
+    <argument id="513" parent="299" name="uncompressed_chunk">
       <DataType>regclass|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="520" parent="299" name="if_compressed">
+    <argument id="514" parent="299" name="if_compressed">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>false</DefaultExpression>
       <Position>2</Position>
     </argument>
-    <argument id="521" parent="300">
+    <argument id="515" parent="300">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>boolean|0s</DataType>
     </argument>
-    <argument id="522" parent="300" name="node_name">
+    <argument id="516" parent="300" name="node_name">
       <DataType>name|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="523" parent="300" name="if_exists">
+    <argument id="517" parent="300" name="if_exists">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>false</DefaultExpression>
       <Position>2</Position>
     </argument>
-    <argument id="524" parent="300" name="force">
+    <argument id="518" parent="300" name="force">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>false</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="525" parent="300" name="repartition">
+    <argument id="519" parent="300" name="repartition">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>true</DefaultExpression>
       <Position>4</Position>
     </argument>
-    <argument id="526" parent="300" name="drop_database">
+    <argument id="520" parent="300" name="drop_database">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>false</DefaultExpression>
       <Position>5</Position>
     </argument>
-    <argument id="527" parent="301">
+    <argument id="521" parent="301">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>void|0s</DataType>
     </argument>
-    <argument id="528" parent="301" name="job_id">
+    <argument id="522" parent="301" name="job_id">
       <DataType>integer|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="529" parent="302">
+    <argument id="523" parent="302">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>integer|0s</DataType>
     </argument>
-    <argument id="530" parent="302" name="node_name">
+    <argument id="524" parent="302" name="node_name">
       <DataType>name|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="531" parent="302" name="hypertable">
+    <argument id="525" parent="302" name="hypertable">
       <DataType>regclass|0s</DataType>
       <DefaultExpression>NULL::regclass</DefaultExpression>
       <Position>2</Position>
     </argument>
-    <argument id="532" parent="302" name="if_attached">
+    <argument id="526" parent="302" name="if_attached">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>false</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="533" parent="302" name="force">
+    <argument id="527" parent="302" name="force">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>false</DefaultExpression>
       <Position>4</Position>
     </argument>
-    <argument id="534" parent="302" name="repartition">
+    <argument id="528" parent="302" name="repartition">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>true</DefaultExpression>
       <Position>5</Position>
     </argument>
-    <argument id="535" parent="303">
+    <argument id="529" parent="303">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>integer|0s</DataType>
     </argument>
-    <argument id="536" parent="303" name="tablespace">
+    <argument id="530" parent="303" name="tablespace">
       <DataType>name|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="537" parent="303" name="hypertable">
+    <argument id="531" parent="303" name="hypertable">
       <DataType>regclass|0s</DataType>
       <DefaultExpression>NULL::regclass</DefaultExpression>
       <Position>2</Position>
     </argument>
-    <argument id="538" parent="303" name="if_attached">
+    <argument id="532" parent="303" name="if_attached">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>false</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="539" parent="304">
+    <argument id="533" parent="304">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>integer|0s</DataType>
     </argument>
-    <argument id="540" parent="304" name="hypertable">
+    <argument id="534" parent="304" name="hypertable">
       <DataType>regclass|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="541" parent="305" name="query">
+    <argument id="535" parent="305" name="query">
       <DataType>text|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="542" parent="305" name="node_list">
+    <argument id="536" parent="305" name="node_list">
       <DataType>name[]|0s</DataType>
       <DefaultExpression>NULL::name[]</DefaultExpression>
       <Position>2</Position>
     </argument>
-    <argument id="543" parent="305" name="transactional">
+    <argument id="537" parent="305" name="transactional">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>true</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="544" parent="306">
+    <argument id="538" parent="306">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>setof() text|0s</DataType>
     </argument>
-    <argument id="545" parent="306" name="relation">
+    <argument id="539" parent="306" name="relation">
       <DataType>regclass|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="546" parent="306" name="older_than">
+    <argument id="540" parent="306" name="older_than">
       <DataType>&quot;any&quot;|0s</DataType>
       <DefaultExpression>NULL::unknown</DefaultExpression>
       <Position>2</Position>
     </argument>
-    <argument id="547" parent="306" name="newer_than">
+    <argument id="541" parent="306" name="newer_than">
       <DataType>&quot;any&quot;|0s</DataType>
       <DefaultExpression>NULL::unknown</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="548" parent="306" name="verbose">
+    <argument id="542" parent="306" name="verbose">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>false</DefaultExpression>
       <Position>4</Position>
     </argument>
-    <argument id="549" parent="307">
+    <argument id="543" parent="307">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>jsonb|0s</DataType>
     </argument>
-    <argument id="550" parent="308">
+    <argument id="544" parent="308">
       <ArgumentDirection>T</ArgumentDirection>
       <DataType>table(&quot;total_chunks&quot; bigint, &quot;number_compressed_chunks&quot; bigint, &quot;before_compression_table_bytes&quot; bigint, &quot;before_compression_index_bytes&quot; bigint, &quot;before_compression_toast_bytes&quot; bigint, &quot;before_compression_total_bytes&quot; bigint, &quot;after_compression_table_bytes&quot; bigint, &quot;after_compression_index_bytes&quot; bigint, &quot;after_compression_toast_bytes&quot; bigint, &quot;after_compression_total_bytes&quot; bigint, &quot;node_name&quot; name)|0v</DataType>
     </argument>
-    <argument id="551" parent="308" name="hypertable">
+    <argument id="545" parent="308" name="hypertable">
       <DataType>regclass|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="552" parent="309">
+    <argument id="546" parent="309">
       <ArgumentDirection>T</ArgumentDirection>
       <DataType>table(&quot;table_bytes&quot; bigint, &quot;index_bytes&quot; bigint, &quot;toast_bytes&quot; bigint, &quot;total_bytes&quot; bigint, &quot;node_name&quot; name)|0v</DataType>
     </argument>
-    <argument id="553" parent="309" name="hypertable">
+    <argument id="547" parent="309" name="hypertable">
       <DataType>regclass|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="554" parent="310">
+    <argument id="548" parent="310">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>bigint|0s</DataType>
     </argument>
-    <argument id="555" parent="310" name="index_name">
+    <argument id="549" parent="310" name="index_name">
       <DataType>regclass|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="556" parent="311">
+    <argument id="550" parent="311">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>bigint|0s</DataType>
     </argument>
-    <argument id="557" parent="311" name="hypertable">
+    <argument id="551" parent="311" name="hypertable">
       <DataType>regclass|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="558" parent="312">
+    <argument id="552" parent="312">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>bigint|0s</DataType>
     </argument>
-    <argument id="559" parent="312" name="value">
+    <argument id="553" parent="312" name="value">
       <DataType>bigint|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="560" parent="312" name="prev">
+    <argument id="554" parent="312" name="prev">
       <DataType>record|0s</DataType>
       <DefaultExpression>NULL::record</DefaultExpression>
       <Position>2</Position>
     </argument>
-    <argument id="561" parent="312" name="next">
+    <argument id="555" parent="312" name="next">
       <DataType>record|0s</DataType>
       <DefaultExpression>NULL::record</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="562" parent="313">
+    <argument id="556" parent="313">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>double precision|0s</DataType>
     </argument>
-    <argument id="563" parent="313" name="value">
+    <argument id="557" parent="313" name="value">
       <DataType>double precision|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="564" parent="313" name="prev">
+    <argument id="558" parent="313" name="prev">
       <DataType>record|0s</DataType>
       <DefaultExpression>NULL::record</DefaultExpression>
       <Position>2</Position>
     </argument>
-    <argument id="565" parent="313" name="next">
+    <argument id="559" parent="313" name="next">
       <DataType>record|0s</DataType>
       <DefaultExpression>NULL::record</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="566" parent="314">
+    <argument id="560" parent="314">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>integer|0s</DataType>
     </argument>
-    <argument id="567" parent="314" name="value">
+    <argument id="561" parent="314" name="value">
       <DataType>integer|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="568" parent="314" name="prev">
+    <argument id="562" parent="314" name="prev">
       <DataType>record|0s</DataType>
       <DefaultExpression>NULL::record</DefaultExpression>
       <Position>2</Position>
     </argument>
-    <argument id="569" parent="314" name="next">
+    <argument id="563" parent="314" name="next">
       <DataType>record|0s</DataType>
       <DefaultExpression>NULL::record</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="570" parent="315">
+    <argument id="564" parent="315">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>real|0s</DataType>
     </argument>
-    <argument id="571" parent="315" name="value">
+    <argument id="565" parent="315" name="value">
       <DataType>real|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="572" parent="315" name="prev">
+    <argument id="566" parent="315" name="prev">
       <DataType>record|0s</DataType>
       <DefaultExpression>NULL::record</DefaultExpression>
       <Position>2</Position>
     </argument>
-    <argument id="573" parent="315" name="next">
+    <argument id="567" parent="315" name="next">
       <DataType>record|0s</DataType>
       <DefaultExpression>NULL::record</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="574" parent="316">
+    <argument id="568" parent="316">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>smallint|0s</DataType>
     </argument>
-    <argument id="575" parent="316" name="value">
+    <argument id="569" parent="316" name="value">
       <DataType>smallint|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="576" parent="316" name="prev">
+    <argument id="570" parent="316" name="prev">
       <DataType>record|0s</DataType>
       <DefaultExpression>NULL::record</DefaultExpression>
       <Position>2</Position>
     </argument>
-    <argument id="577" parent="316" name="next">
+    <argument id="571" parent="316" name="next">
       <DataType>record|0s</DataType>
       <DefaultExpression>NULL::record</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="578" parent="317">
+    <argument id="572" parent="317">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>anyelement|0s</DataType>
     </argument>
-    <argument id="579" parent="317" name="value">
+    <argument id="573" parent="317" name="value">
       <DataType>anyelement|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="580" parent="317" name="prev">
+    <argument id="574" parent="317" name="prev">
       <DataType>anyelement|0s</DataType>
       <DefaultExpression>NULL::unknown</DefaultExpression>
       <Position>2</Position>
     </argument>
-    <argument id="581" parent="317" name="treat_null_as_missing">
+    <argument id="575" parent="317" name="treat_null_as_missing">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>false</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="582" parent="318">
+    <argument id="576" parent="318">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>void|0s</DataType>
     </argument>
-    <argument id="583" parent="318" name="chunk">
+    <argument id="577" parent="318" name="chunk">
       <DataType>regclass|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="584" parent="318" name="destination_tablespace">
+    <argument id="578" parent="318" name="destination_tablespace">
       <DataType>name|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="585" parent="318" name="index_destination_tablespace">
+    <argument id="579" parent="318" name="index_destination_tablespace">
       <DataType>name|0s</DataType>
       <DefaultExpression>NULL::name</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="586" parent="318" name="reorder_index">
+    <argument id="580" parent="318" name="reorder_index">
       <DataType>regclass|0s</DataType>
       <DefaultExpression>NULL::regclass</DefaultExpression>
       <Position>4</Position>
     </argument>
-    <argument id="587" parent="318" name="verbose">
+    <argument id="581" parent="318" name="verbose">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>false</DefaultExpression>
       <Position>5</Position>
     </argument>
-    <argument id="588" parent="319" name="chunk">
+    <argument id="582" parent="319" name="chunk">
       <DataType>regclass|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="589" parent="319" name="if_not_compressed">
+    <argument id="583" parent="319" name="if_not_compressed">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>false</DefaultExpression>
       <Position>2</Position>
     </argument>
-    <argument id="590" parent="320" name="continuous_aggregate">
+    <argument id="584" parent="320" name="continuous_aggregate">
       <DataType>regclass|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="591" parent="320" name="window_start">
+    <argument id="585" parent="320" name="window_start">
       <DataType>&quot;any&quot;|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="592" parent="320" name="window_end">
+    <argument id="586" parent="320" name="window_end">
       <DataType>&quot;any&quot;|0s</DataType>
       <Position>3</Position>
     </argument>
-    <argument id="593" parent="321">
+    <argument id="587" parent="321">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>boolean|0s</DataType>
     </argument>
-    <argument id="594" parent="321" name="hypertable">
+    <argument id="588" parent="321" name="hypertable">
       <DataType>regclass|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="595" parent="321" name="if_exists">
-      <DataType>boolean|0s</DataType>
-      <DefaultExpression>false</DefaultExpression>
-      <Position>2</Position>
-    </argument>
-    <argument id="596" parent="322">
-      <ArgumentDirection>R</ArgumentDirection>
-      <DataType>void|0s</DataType>
-    </argument>
-    <argument id="597" parent="322" name="continuous_aggregate">
-      <DataType>regclass|0s</DataType>
-      <Position>1</Position>
-    </argument>
-    <argument id="598" parent="322" name="if_not_exists">
+    <argument id="589" parent="321" name="if_exists">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>false</DefaultExpression>
       <Position>2</Position>
     </argument>
-    <argument id="599" parent="323">
+    <argument id="590" parent="322">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>void|0s</DataType>
     </argument>
-    <argument id="600" parent="323" name="hypertable">
+    <argument id="591" parent="322" name="continuous_aggregate">
       <DataType>regclass|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="601" parent="323" name="if_exists">
+    <argument id="592" parent="322" name="if_not_exists">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>false</DefaultExpression>
       <Position>2</Position>
     </argument>
-    <argument id="602" parent="324">
+    <argument id="593" parent="323">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>void|0s</DataType>
     </argument>
-    <argument id="603" parent="324" name="relation">
+    <argument id="594" parent="323" name="hypertable">
       <DataType>regclass|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="604" parent="324" name="if_exists">
+    <argument id="595" parent="323" name="if_exists">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>false</DefaultExpression>
       <Position>2</Position>
     </argument>
-    <argument id="605" parent="325">
+    <argument id="596" parent="324">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>void|0s</DataType>
     </argument>
-    <argument id="606" parent="325" name="chunk">
+    <argument id="597" parent="324" name="relation">
       <DataType>regclass|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="607" parent="325" name="index">
+    <argument id="598" parent="324" name="if_exists">
+      <DataType>boolean|0s</DataType>
+      <DefaultExpression>false</DefaultExpression>
+      <Position>2</Position>
+    </argument>
+    <argument id="599" parent="325">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>void|0s</DataType>
+    </argument>
+    <argument id="600" parent="325" name="chunk">
+      <DataType>regclass|0s</DataType>
+      <Position>1</Position>
+    </argument>
+    <argument id="601" parent="325" name="index">
       <DataType>regclass|0s</DataType>
       <DefaultExpression>NULL::regclass</DefaultExpression>
       <Position>2</Position>
     </argument>
-    <argument id="608" parent="325" name="verbose">
+    <argument id="602" parent="325" name="verbose">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>false</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="609" parent="326" name="job_id">
+    <argument id="603" parent="326" name="job_id">
       <DataType>integer|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="610" parent="327">
+    <argument id="604" parent="327">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>record|0s</DataType>
     </argument>
-    <argument id="611" parent="327" name="hypertable">
+    <argument id="605" parent="327" name="hypertable">
       <DataType>regclass|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="612" parent="327" name="chunk_target_size">
+    <argument id="606" parent="327" name="chunk_target_size">
       <DataType>text|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="613" parent="327" name="chunk_sizing_func">
+    <argument id="607" parent="327" name="chunk_sizing_func">
       <ArgumentDirection>M</ArgumentDirection>
       <DataType>regproc|0s</DataType>
       <DefaultExpression>&apos;_timescaledb_internal.calculate_chunk_interval&apos;::regproc</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="614" parent="327" name="chunk_target_size">
+    <argument id="608" parent="327" name="chunk_target_size">
       <ArgumentDirection>O</ArgumentDirection>
       <DataType>bigint|0s</DataType>
       <Position>4</Position>
     </argument>
-    <argument id="615" parent="328">
+    <argument id="609" parent="328">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>void|0s</DataType>
     </argument>
-    <argument id="616" parent="328" name="hypertable">
+    <argument id="610" parent="328" name="hypertable">
       <DataType>regclass|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="617" parent="328" name="chunk_time_interval">
+    <argument id="611" parent="328" name="chunk_time_interval">
       <DataType>anyelement|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="618" parent="328" name="dimension_name">
+    <argument id="612" parent="328" name="dimension_name">
       <DataType>name|0s</DataType>
       <DefaultExpression>NULL::name</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="619" parent="329">
+    <argument id="613" parent="329">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>void|0s</DataType>
     </argument>
-    <argument id="620" parent="329" name="hypertable">
+    <argument id="614" parent="329" name="hypertable">
       <DataType>regclass|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="621" parent="329" name="integer_now_func">
+    <argument id="615" parent="329" name="integer_now_func">
       <DataType>regproc|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="622" parent="329" name="replace_if_exists">
+    <argument id="616" parent="329" name="replace_if_exists">
       <DataType>boolean|0s</DataType>
       <DefaultExpression>false</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="623" parent="330">
+    <argument id="617" parent="330">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>void|0s</DataType>
     </argument>
-    <argument id="624" parent="330" name="hypertable">
+    <argument id="618" parent="330" name="hypertable">
       <DataType>regclass|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="625" parent="330" name="number_partitions">
+    <argument id="619" parent="330" name="number_partitions">
       <DataType>integer|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="626" parent="330" name="dimension_name">
+    <argument id="620" parent="330" name="dimension_name">
       <DataType>name|0s</DataType>
       <DefaultExpression>NULL::name</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="627" parent="331">
+    <argument id="621" parent="331">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>void|0s</DataType>
     </argument>
-    <argument id="628" parent="331" name="hypertable">
+    <argument id="622" parent="331" name="hypertable">
       <DataType>regclass|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="629" parent="331" name="replication_factor">
+    <argument id="623" parent="331" name="replication_factor">
       <DataType>integer|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="630" parent="332">
+    <argument id="624" parent="332">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>setof() regclass|0s</DataType>
     </argument>
-    <argument id="631" parent="332" name="relation">
+    <argument id="625" parent="332" name="relation">
       <DataType>regclass|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="632" parent="332" name="older_than">
+    <argument id="626" parent="332" name="older_than">
       <DataType>&quot;any&quot;|0s</DataType>
       <DefaultExpression>NULL::unknown</DefaultExpression>
       <Position>2</Position>
     </argument>
-    <argument id="633" parent="332" name="newer_than">
+    <argument id="627" parent="332" name="newer_than">
       <DataType>&quot;any&quot;|0s</DataType>
       <DefaultExpression>NULL::unknown</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="634" parent="333">
+    <argument id="628" parent="333">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>setof() name|0s</DataType>
     </argument>
-    <argument id="635" parent="333" name="hypertable">
+    <argument id="629" parent="333" name="hypertable">
       <DataType>regclass|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="636" parent="334">
+    <argument id="630" parent="334">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>bigint|0s</DataType>
     </argument>
-    <argument id="637" parent="334" name="bucket_width">
+    <argument id="631" parent="334" name="bucket_width">
       <DataType>bigint|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="638" parent="334" name="ts">
+    <argument id="632" parent="334" name="ts">
       <DataType>bigint|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="639" parent="335">
+    <argument id="633" parent="335">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>bigint|0s</DataType>
     </argument>
-    <argument id="640" parent="335" name="bucket_width">
+    <argument id="634" parent="335" name="bucket_width">
       <DataType>bigint|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="641" parent="335" name="ts">
+    <argument id="635" parent="335" name="ts">
       <DataType>bigint|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="642" parent="335" name="offset">
+    <argument id="636" parent="335" name="offset">
       <DataType>bigint|0s</DataType>
       <Position>3</Position>
     </argument>
-    <argument id="643" parent="336">
+    <argument id="637" parent="336">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>integer|0s</DataType>
     </argument>
-    <argument id="644" parent="336" name="bucket_width">
+    <argument id="638" parent="336" name="bucket_width">
       <DataType>integer|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="645" parent="336" name="ts">
+    <argument id="639" parent="336" name="ts">
       <DataType>integer|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="646" parent="337">
+    <argument id="640" parent="337">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>integer|0s</DataType>
     </argument>
-    <argument id="647" parent="337" name="bucket_width">
+    <argument id="641" parent="337" name="bucket_width">
       <DataType>integer|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="648" parent="337" name="ts">
+    <argument id="642" parent="337" name="ts">
       <DataType>integer|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="649" parent="337" name="offset">
+    <argument id="643" parent="337" name="offset">
       <DataType>integer|0s</DataType>
       <Position>3</Position>
     </argument>
-    <argument id="650" parent="338">
+    <argument id="644" parent="338">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>date|0s</DataType>
     </argument>
-    <argument id="651" parent="338" name="bucket_width">
+    <argument id="645" parent="338" name="bucket_width">
       <DataType>interval|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="652" parent="338" name="ts">
+    <argument id="646" parent="338" name="ts">
       <DataType>date|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="653" parent="339">
+    <argument id="647" parent="339">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>date|0s</DataType>
     </argument>
-    <argument id="654" parent="339" name="bucket_width">
+    <argument id="648" parent="339" name="bucket_width">
       <DataType>interval|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="655" parent="339" name="ts">
+    <argument id="649" parent="339" name="ts">
       <DataType>date|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="656" parent="339" name="origin">
+    <argument id="650" parent="339" name="origin">
       <DataType>date|0s</DataType>
       <Position>3</Position>
     </argument>
-    <argument id="657" parent="340">
+    <argument id="651" parent="340">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>date|0s</DataType>
     </argument>
-    <argument id="658" parent="340" name="bucket_width">
+    <argument id="652" parent="340" name="bucket_width">
       <DataType>interval|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="659" parent="340" name="ts">
+    <argument id="653" parent="340" name="ts">
       <DataType>date|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="660" parent="340" name="offset">
+    <argument id="654" parent="340" name="offset">
       <DataType>interval|0s</DataType>
       <Position>3</Position>
     </argument>
-    <argument id="661" parent="341">
+    <argument id="655" parent="341">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>timestamp with time zone|0s</DataType>
     </argument>
-    <argument id="662" parent="341" name="bucket_width">
+    <argument id="656" parent="341" name="bucket_width">
       <DataType>interval|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="663" parent="341" name="ts">
+    <argument id="657" parent="341" name="ts">
       <DataType>timestamp with time zone|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="664" parent="342">
+    <argument id="658" parent="342">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>timestamp with time zone|0s</DataType>
     </argument>
-    <argument id="665" parent="342" name="bucket_width">
+    <argument id="659" parent="342" name="bucket_width">
       <DataType>interval|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="666" parent="342" name="ts">
+    <argument id="660" parent="342" name="ts">
       <DataType>timestamp with time zone|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="667" parent="342" name="offset">
+    <argument id="661" parent="342" name="offset">
       <DataType>interval|0s</DataType>
       <Position>3</Position>
     </argument>
-    <argument id="668" parent="343">
+    <argument id="662" parent="343">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>timestamp with time zone|0s</DataType>
     </argument>
-    <argument id="669" parent="343" name="bucket_width">
+    <argument id="663" parent="343" name="bucket_width">
       <DataType>interval|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="670" parent="343" name="ts">
+    <argument id="664" parent="343" name="ts">
       <DataType>timestamp with time zone|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="671" parent="343" name="origin">
+    <argument id="665" parent="343" name="origin">
       <DataType>timestamp with time zone|0s</DataType>
       <Position>3</Position>
     </argument>
-    <argument id="672" parent="344">
+    <argument id="666" parent="344">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>timestamp|0s</DataType>
     </argument>
-    <argument id="673" parent="344" name="bucket_width">
+    <argument id="667" parent="344" name="bucket_width">
       <DataType>interval|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="674" parent="344" name="ts">
+    <argument id="668" parent="344" name="ts">
       <DataType>timestamp|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="675" parent="345">
+    <argument id="669" parent="345">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>timestamp|0s</DataType>
     </argument>
-    <argument id="676" parent="345" name="bucket_width">
+    <argument id="670" parent="345" name="bucket_width">
       <DataType>interval|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="677" parent="345" name="ts">
+    <argument id="671" parent="345" name="ts">
       <DataType>timestamp|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="678" parent="345" name="offset">
+    <argument id="672" parent="345" name="offset">
       <DataType>interval|0s</DataType>
       <Position>3</Position>
     </argument>
-    <argument id="679" parent="346">
+    <argument id="673" parent="346">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>timestamp|0s</DataType>
     </argument>
-    <argument id="680" parent="346" name="bucket_width">
+    <argument id="674" parent="346" name="bucket_width">
       <DataType>interval|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="681" parent="346" name="ts">
+    <argument id="675" parent="346" name="ts">
       <DataType>timestamp|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="682" parent="346" name="origin">
+    <argument id="676" parent="346" name="origin">
       <DataType>timestamp|0s</DataType>
       <Position>3</Position>
     </argument>
-    <argument id="683" parent="347">
+    <argument id="677" parent="347">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>smallint|0s</DataType>
     </argument>
-    <argument id="684" parent="347" name="bucket_width">
+    <argument id="678" parent="347" name="bucket_width">
       <DataType>smallint|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="685" parent="347" name="ts">
+    <argument id="679" parent="347" name="ts">
       <DataType>smallint|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="686" parent="348">
+    <argument id="680" parent="348">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>smallint|0s</DataType>
     </argument>
-    <argument id="687" parent="348" name="bucket_width">
+    <argument id="681" parent="348" name="bucket_width">
       <DataType>smallint|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="688" parent="348" name="ts">
+    <argument id="682" parent="348" name="ts">
       <DataType>smallint|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="689" parent="348" name="offset">
+    <argument id="683" parent="348" name="offset">
       <DataType>smallint|0s</DataType>
       <Position>3</Position>
     </argument>
-    <argument id="690" parent="349">
+    <argument id="684" parent="349">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>bigint|0s</DataType>
     </argument>
-    <argument id="691" parent="349" name="bucket_width">
+    <argument id="685" parent="349" name="bucket_width">
       <DataType>bigint|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="692" parent="349" name="ts">
+    <argument id="686" parent="349" name="ts">
       <DataType>bigint|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="693" parent="349" name="start">
+    <argument id="687" parent="349" name="start">
       <DataType>bigint|0s</DataType>
       <DefaultExpression>NULL::bigint</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="694" parent="349" name="finish">
+    <argument id="688" parent="349" name="finish">
       <DataType>bigint|0s</DataType>
       <DefaultExpression>NULL::bigint</DefaultExpression>
       <Position>4</Position>
     </argument>
-    <argument id="695" parent="350">
+    <argument id="689" parent="350">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>integer|0s</DataType>
     </argument>
-    <argument id="696" parent="350" name="bucket_width">
+    <argument id="690" parent="350" name="bucket_width">
       <DataType>integer|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="697" parent="350" name="ts">
+    <argument id="691" parent="350" name="ts">
       <DataType>integer|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="698" parent="350" name="start">
+    <argument id="692" parent="350" name="start">
       <DataType>integer|0s</DataType>
       <DefaultExpression>NULL::integer</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="699" parent="350" name="finish">
+    <argument id="693" parent="350" name="finish">
       <DataType>integer|0s</DataType>
       <DefaultExpression>NULL::integer</DefaultExpression>
       <Position>4</Position>
     </argument>
-    <argument id="700" parent="351">
+    <argument id="694" parent="351">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>date|0s</DataType>
     </argument>
-    <argument id="701" parent="351" name="bucket_width">
+    <argument id="695" parent="351" name="bucket_width">
       <DataType>interval|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="702" parent="351" name="ts">
+    <argument id="696" parent="351" name="ts">
       <DataType>date|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="703" parent="351" name="start">
+    <argument id="697" parent="351" name="start">
       <DataType>date|0s</DataType>
       <DefaultExpression>NULL::date</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="704" parent="351" name="finish">
+    <argument id="698" parent="351" name="finish">
       <DataType>date|0s</DataType>
       <DefaultExpression>NULL::date</DefaultExpression>
       <Position>4</Position>
     </argument>
-    <argument id="705" parent="352">
+    <argument id="699" parent="352">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>timestamp with time zone|0s</DataType>
     </argument>
-    <argument id="706" parent="352" name="bucket_width">
+    <argument id="700" parent="352" name="bucket_width">
       <DataType>interval|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="707" parent="352" name="ts">
+    <argument id="701" parent="352" name="ts">
       <DataType>timestamp with time zone|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="708" parent="352" name="start">
+    <argument id="702" parent="352" name="start">
       <DataType>timestamp with time zone|0s</DataType>
       <DefaultExpression>NULL::timestamp with time zone</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="709" parent="352" name="finish">
+    <argument id="703" parent="352" name="finish">
       <DataType>timestamp with time zone|0s</DataType>
       <DefaultExpression>NULL::timestamp with time zone</DefaultExpression>
       <Position>4</Position>
     </argument>
-    <argument id="710" parent="353">
+    <argument id="704" parent="353">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>timestamp|0s</DataType>
     </argument>
-    <argument id="711" parent="353" name="bucket_width">
+    <argument id="705" parent="353" name="bucket_width">
       <DataType>interval|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="712" parent="353" name="ts">
+    <argument id="706" parent="353" name="ts">
       <DataType>timestamp|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="713" parent="353" name="start">
+    <argument id="707" parent="353" name="start">
       <DataType>timestamp|0s</DataType>
       <DefaultExpression>NULL::timestamp without time zone</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="714" parent="353" name="finish">
+    <argument id="708" parent="353" name="finish">
       <DataType>timestamp|0s</DataType>
       <DefaultExpression>NULL::timestamp without time zone</DefaultExpression>
       <Position>4</Position>
     </argument>
-    <argument id="715" parent="354">
+    <argument id="709" parent="354">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>smallint|0s</DataType>
     </argument>
-    <argument id="716" parent="354" name="bucket_width">
+    <argument id="710" parent="354" name="bucket_width">
       <DataType>smallint|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="717" parent="354" name="ts">
+    <argument id="711" parent="354" name="ts">
       <DataType>smallint|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="718" parent="354" name="start">
+    <argument id="712" parent="354" name="start">
       <DataType>smallint|0s</DataType>
       <DefaultExpression>NULL::smallint</DefaultExpression>
       <Position>3</Position>
     </argument>
-    <argument id="719" parent="354" name="finish">
+    <argument id="713" parent="354" name="finish">
       <DataType>smallint|0s</DataType>
       <DefaultExpression>NULL::smallint</DefaultExpression>
       <Position>4</Position>
     </argument>
-    <argument id="720" parent="355">
+    <argument id="714" parent="355">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>fdw_handler|0s</DataType>
     </argument>
-    <argument id="721" parent="356">
+    <argument id="715" parent="356">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>void|0s</DataType>
     </argument>
-    <argument id="722" parent="356">
+    <argument id="716" parent="356">
       <DataType>text[]|0s</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="723" parent="356">
+    <argument id="717" parent="356">
       <DataType>oid|0s</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="724" parent="357">
+    <argument id="718" parent="357">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>boolean|0s</DataType>
     </argument>
-    <argument id="725" parent="358">
+    <argument id="719" parent="358">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>boolean|0s</DataType>
     </argument>
-    <column id="726" parent="361" name="stock_id">
-      <DataType>integer|0s</DataType>
-      <Position>1</Position>
-      <StateNumber>29953</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="727" parent="361" name="day">
-      <DataType>timestamp|0s</DataType>
-      <Position>2</Position>
-      <StateNumber>29953</StateNumber>
-      <TypeId>1114</TypeId>
-    </column>
-    <column id="728" parent="361" name="open">
-      <DataType>double precision|0s</DataType>
-      <Position>3</Position>
-      <StateNumber>29953</StateNumber>
-      <TypeId>701</TypeId>
-    </column>
-    <column id="729" parent="361" name="high">
-      <DataType>double precision|0s</DataType>
-      <Position>4</Position>
-      <StateNumber>29953</StateNumber>
-      <TypeId>701</TypeId>
-    </column>
-    <column id="730" parent="361" name="low">
-      <DataType>double precision|0s</DataType>
-      <Position>5</Position>
-      <StateNumber>29953</StateNumber>
-      <TypeId>701</TypeId>
-    </column>
-    <column id="731" parent="361" name="close">
-      <DataType>double precision|0s</DataType>
-      <Position>6</Position>
-      <StateNumber>29953</StateNumber>
-      <TypeId>701</TypeId>
-    </column>
-    <column id="732" parent="361" name="volume">
-      <DataType>numeric|0s</DataType>
-      <Position>7</Position>
-      <StateNumber>29953</StateNumber>
-      <TypeId>1700</TypeId>
-    </column>
-    <column id="733" parent="362" name="stock_id">
-      <DataType>integer|0s</DataType>
-      <Position>1</Position>
-      <StateNumber>29958</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="734" parent="362" name="day">
-      <DataType>timestamp|0s</DataType>
-      <Position>2</Position>
-      <StateNumber>29958</StateNumber>
-      <TypeId>1114</TypeId>
-    </column>
-    <column id="735" parent="362" name="open">
-      <DataType>numeric|0s</DataType>
-      <Position>3</Position>
-      <StateNumber>29958</StateNumber>
-      <TypeId>1700</TypeId>
-    </column>
-    <column id="736" parent="362" name="close">
-      <DataType>numeric|0s</DataType>
-      <Position>4</Position>
-      <StateNumber>29958</StateNumber>
-      <TypeId>1700</TypeId>
-    </column>
-    <column id="737" parent="362" name="intraday_change_in_percent">
-      <DataType>numeric|0s</DataType>
-      <Position>5</Position>
-      <StateNumber>29958</StateNumber>
-      <TypeId>1700</TypeId>
-    </column>
-    <column id="738" parent="363" name="symbol">
+    <column id="720" parent="360" name="symbol">
       <DataType>text|0s</DataType>
       <Position>1</Position>
       <StateNumber>2875</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="739" parent="363" name="histogram">
+    <column id="721" parent="360" name="histogram">
       <DataType>integer[]|0s</DataType>
       <Position>2</Position>
       <StateNumber>2875</StateNumber>
       <TypeId>1007</TypeId>
     </column>
-    <column id="740" parent="364" name="symbol">
-      <DataType>text|0s</DataType>
-      <Position>1</Position>
-      <StateNumber>29959</StateNumber>
-      <TypeId>25</TypeId>
-    </column>
-    <column id="741" parent="364" name="histogram">
-      <DataType>integer[]|0s</DataType>
-      <Position>2</Position>
-      <StateNumber>29959</StateNumber>
-      <TypeId>1007</TypeId>
-    </column>
-    <column id="742" parent="365" name="id">
+    <column id="722" parent="361" name="id">
       <DataType>integer|0s</DataType>
       <DefaultExpression>nextval(&apos;stock_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
@@ -6923,35 +6800,35 @@ DROP TABLE</Tags>
       <StateNumber>764</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="743" parent="365" name="symbol">
+    <column id="723" parent="361" name="symbol">
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>764</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="744" parent="365" name="name">
+    <column id="724" parent="361" name="name">
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>764</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="745" parent="365" name="exchange">
+    <column id="725" parent="361" name="exchange">
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>764</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="746" parent="365" name="is_etf">
+    <column id="726" parent="361" name="is_etf">
       <DataType>boolean|0s</DataType>
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StateNumber>764</StateNumber>
       <TypeId>16</TypeId>
     </column>
-    <index id="747" parent="365" name="stock_pkey">
+    <index id="727" parent="361" name="stock_pkey">
       <ClassIds>1978</ClassIds>
       <ColNames>id</ColNames>
       <CollationIds>0</CollationIds>
@@ -6962,7 +6839,7 @@ DROP TABLE</Tags>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="748" parent="365" name="stock_pkey">
+    <key id="728" parent="361" name="stock_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>25764</ObjectId>
@@ -6970,111 +6847,56 @@ DROP TABLE</Tags>
       <StateNumber>764</StateNumber>
       <UnderlyingIndexId>25763</UnderlyingIndexId>
     </key>
-    <column id="749" parent="366" name="id">
-      <DataType>integer|0s</DataType>
-      <DefaultExpression>nextval(&apos;stock_delete_id_seq&apos;::regclass)</DefaultExpression>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <StateNumber>16998</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="750" parent="366" name="symbol">
-      <DataType>text|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-      <StateNumber>16998</StateNumber>
-      <TypeId>25</TypeId>
-    </column>
-    <column id="751" parent="366" name="name">
-      <DataType>text|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-      <StateNumber>16998</StateNumber>
-      <TypeId>25</TypeId>
-    </column>
-    <column id="752" parent="366" name="exchange">
-      <DataType>text|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-      <StateNumber>16998</StateNumber>
-      <TypeId>25</TypeId>
-    </column>
-    <column id="753" parent="366" name="get_price_data">
-      <DataType>boolean|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>5</Position>
-      <StateNumber>16998</StateNumber>
-      <TypeId>16</TypeId>
-    </column>
-    <index id="754" parent="366" name="stock_delete_pkey">
-      <ClassIds>1978</ClassIds>
-      <ColNames>id</ColNames>
-      <CollationIds>0</CollationIds>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>215192</ObjectId>
-      <Primary>1</Primary>
-      <StateNumber>16998</StateNumber>
-      <Unique>1</Unique>
-      <AccessMethodId>403</AccessMethodId>
-    </index>
-    <key id="755" parent="366" name="stock_delete_pkey">
-      <ColNames>id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>215193</ObjectId>
-      <Primary>1</Primary>
-      <StateNumber>16998</StateNumber>
-      <UnderlyingIndexId>215192</UnderlyingIndexId>
-    </key>
-    <column id="756" parent="367" name="stock_id">
+    <column id="729" parent="362" name="stock_id">
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>991</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="757" parent="367" name="dt">
+    <column id="730" parent="362" name="dt">
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>991</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="758" parent="367" name="open">
+    <column id="731" parent="362" name="open">
       <DataType>numeric(6,2 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>991</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="759" parent="367" name="high">
+    <column id="732" parent="362" name="high">
       <DataType>numeric(6,2 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>991</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="760" parent="367" name="low">
+    <column id="733" parent="362" name="low">
       <DataType>numeric(6,2 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StateNumber>991</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="761" parent="367" name="close">
+    <column id="734" parent="362" name="close">
       <DataType>numeric(6,2 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>6</Position>
       <StateNumber>991</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="762" parent="367" name="volume">
+    <column id="735" parent="362" name="volume">
       <DataType>numeric|0s</DataType>
       <NotNull>1</NotNull>
       <Position>7</Position>
       <StateNumber>991</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <foreign-key id="763" parent="367" name="fk_stock">
+    <foreign-key id="736" parent="362" name="fk_stock">
       <ColNames>stock_id</ColNames>
       <ObjectId>25981</ObjectId>
       <RefColNames>id</RefColNames>
@@ -7085,7 +6907,7 @@ DROP TABLE</Tags>
       <RefTableName>stock</RefTableName>
       <RefTableKind>table</RefTableKind>
     </foreign-key>
-    <index id="764" parent="367" name="stock_price_pkey">
+    <index id="737" parent="362" name="stock_price_pkey">
       <ClassIds>1978,3128</ClassIds>
       <ColNames>stock_id
 dt</ColNames>
@@ -7097,7 +6919,7 @@ dt</ColNames>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <index id="765" parent="367" name="stock_price_dt_idx">
+    <index id="738" parent="362" name="stock_price_dt_idx">
       <ClassIds>3128</ClassIds>
       <ColNames>dt</ColNames>
       <CollationIds>0</CollationIds>
@@ -7106,7 +6928,7 @@ dt</ColNames>
       <StateNumber>1631</StateNumber>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="766" parent="367" name="stock_price_pkey">
+    <key id="739" parent="362" name="stock_price_pkey">
       <ColNames>stock_id
 dt</ColNames>
       <NameSurrogate>1</NameSurrogate>
@@ -7115,7 +6937,7 @@ dt</ColNames>
       <StateNumber>991</StateNumber>
       <UnderlyingIndexId>25979</UnderlyingIndexId>
     </key>
-    <trigger id="767" parent="367" name="ts_cagg_invalidation_trigger">
+    <trigger id="740" parent="362" name="ts_cagg_invalidation_trigger">
       <CallArgs>&apos;3&apos;</CallArgs>
       <Events>IUD</Events>
       <ObjectId>34477</ObjectId>
@@ -7123,74 +6945,63 @@ dt</ColNames>
       <Turn>after-row</Turn>
       <CallRoutineId>17321</CallRoutineId>
     </trigger>
-    <trigger id="768" parent="367" name="ts_insert_blocker">
+    <trigger id="741" parent="362" name="ts_insert_blocker">
       <Events>I</Events>
       <ObjectId>34397</ObjectId>
       <StateNumber>1631</StateNumber>
       <Turn>before-row</Turn>
       <CallRoutineId>17320</CallRoutineId>
     </trigger>
-    <column id="769" parent="368" name="stock_id">
+    <column id="742" parent="363" name="stock_id">
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>29706</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="770" parent="368" name="dt">
+    <column id="743" parent="363" name="dt">
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>29706</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="771" parent="368" name="open">
+    <column id="744" parent="363" name="open">
       <DataType>numeric(6,2 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>29706</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="772" parent="368" name="high">
+    <column id="745" parent="363" name="high">
       <DataType>numeric(6,2 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>29706</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="773" parent="368" name="low">
+    <column id="746" parent="363" name="low">
       <DataType>numeric(6,2 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StateNumber>29706</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="774" parent="368" name="close">
+    <column id="747" parent="363" name="close">
       <DataType>numeric(6,2 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>6</Position>
       <StateNumber>29706</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="775" parent="368" name="volume">
+    <column id="748" parent="363" name="volume">
       <DataType>numeric|0s</DataType>
       <NotNull>1</NotNull>
       <Position>7</Position>
       <StateNumber>29706</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <foreign-key id="776" parent="368" name="fk_stock">
-      <ColNames>stock_id</ColNames>
-      <ObjectId>215352</ObjectId>
-      <RefColNames>id</RefColNames>
-      <RefColPositions>1</RefColPositions>
-      <RefKeyName>stock_delete_pkey</RefKeyName>
-      <StateNumber>29706</StateNumber>
-      <RefTableId>215186</RefTableId>
-      <RefTableName>stock_delete</RefTableName>
-      <RefTableKind>table</RefTableKind>
-    </foreign-key>
-    <index id="777" parent="368" name="stock_price_delete_pkey">
+    <index id="749" parent="363" name="stock_price_delete_pkey">
       <ClassIds>1978,3128</ClassIds>
       <ColNames>stock_id
 dt</ColNames>
@@ -7198,30 +7009,30 @@ dt</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>215350</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>29711</StateNumber>
+      <StateNumber>30375</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <index id="778" parent="368" name="stock_price_delete_idx">
+    <index id="750" parent="363" name="stock_price_delete_idx">
       <ClassIds>1978,3128</ClassIds>
       <ColNames>stock_id
 dt</ColNames>
       <CollationIds>0,0</CollationIds>
       <ObjectId>215357</ObjectId>
       <ReverseColNames>dt</ReverseColNames>
-      <StateNumber>29711</StateNumber>
+      <StateNumber>30375</StateNumber>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <index id="779" parent="368" name="stock_price_delete_dt_idx">
+    <index id="751" parent="363" name="stock_price_delete_dt_idx">
       <ClassIds>3128</ClassIds>
       <ColNames>dt</ColNames>
       <CollationIds>0</CollationIds>
       <ObjectId>215359</ObjectId>
       <ReverseColNames>dt</ReverseColNames>
-      <StateNumber>29711</StateNumber>
+      <StateNumber>30375</StateNumber>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="780" parent="368" name="stock_price_delete_pkey">
+    <key id="752" parent="363" name="stock_price_delete_pkey">
       <ColNames>stock_id
 dt</ColNames>
       <NameSurrogate>1</NameSurrogate>
@@ -7230,57 +7041,57 @@ dt</ColNames>
       <StateNumber>29706</StateNumber>
       <UnderlyingIndexId>215350</UnderlyingIndexId>
     </key>
-    <trigger id="781" parent="368" name="ts_insert_blocker">
+    <trigger id="753" parent="363" name="ts_insert_blocker">
       <Events>I</Events>
       <ObjectId>215358</ObjectId>
       <StateNumber>29706</StateNumber>
       <Turn>before-row</Turn>
       <CallRoutineId>17320</CallRoutineId>
     </trigger>
-    <column id="782" parent="369" name="stock_id">
+    <column id="754" parent="364" name="stock_id">
       <DataType>integer|0s</DataType>
       <Position>1</Position>
       <StateNumber>3575</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="783" parent="369" name="dt_im">
+    <column id="755" parent="364" name="dt_im">
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>3580</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="784" parent="369" name="open">
+    <column id="756" parent="364" name="open">
       <DataType>double precision|0s</DataType>
       <Position>3</Position>
       <StateNumber>3575</StateNumber>
       <TypeId>701</TypeId>
     </column>
-    <column id="785" parent="369" name="high">
+    <column id="757" parent="364" name="high">
       <DataType>double precision|0s</DataType>
       <Position>4</Position>
       <StateNumber>3575</StateNumber>
       <TypeId>701</TypeId>
     </column>
-    <column id="786" parent="369" name="low">
+    <column id="758" parent="364" name="low">
       <DataType>double precision|0s</DataType>
       <Position>5</Position>
       <StateNumber>3575</StateNumber>
       <TypeId>701</TypeId>
     </column>
-    <column id="787" parent="369" name="close">
+    <column id="759" parent="364" name="close">
       <DataType>double precision|0s</DataType>
       <Position>6</Position>
       <StateNumber>3575</StateNumber>
       <TypeId>701</TypeId>
     </column>
-    <column id="788" parent="369" name="volume">
+    <column id="760" parent="364" name="volume">
       <DataType>numeric|0s</DataType>
       <Position>7</Position>
       <StateNumber>3575</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <index id="789" parent="369" name="stock_price_im_dt_im_idx">
+    <index id="761" parent="364" name="stock_price_im_dt_im_idx">
       <ClassIds>3128</ClassIds>
       <ColNames>dt_im</ColNames>
       <CollationIds>0</CollationIds>
@@ -7289,7 +7100,7 @@ dt</ColNames>
       <StateNumber>3580</StateNumber>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <trigger id="790" parent="369" name="ts_cagg_invalidation_trigger">
+    <trigger id="762" parent="364" name="ts_cagg_invalidation_trigger">
       <CallArgs>&apos;8&apos;</CallArgs>
       <Events>IUD</Events>
       <ObjectId>125506</ObjectId>
@@ -7297,138 +7108,79 @@ dt</ColNames>
       <Turn>after-row</Turn>
       <CallRoutineId>17321</CallRoutineId>
     </trigger>
-    <trigger id="791" parent="369" name="ts_insert_blocker">
+    <trigger id="763" parent="364" name="ts_insert_blocker">
       <Events>I</Events>
       <ObjectId>125351</ObjectId>
       <StateNumber>3580</StateNumber>
       <Turn>before-row</Turn>
       <CallRoutineId>17320</CallRoutineId>
     </trigger>
-    <column id="792" parent="370" name="stock_id">
-      <DataType>integer|0s</DataType>
-      <Position>1</Position>
-      <StateNumber>29913</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="793" parent="370" name="dt_im">
-      <DataType>timestamp|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-      <StateNumber>29914</StateNumber>
-      <TypeId>1114</TypeId>
-    </column>
-    <column id="794" parent="370" name="open">
-      <DataType>double precision|0s</DataType>
-      <Position>3</Position>
-      <StateNumber>29913</StateNumber>
-      <TypeId>701</TypeId>
-    </column>
-    <column id="795" parent="370" name="high">
-      <DataType>double precision|0s</DataType>
-      <Position>4</Position>
-      <StateNumber>29913</StateNumber>
-      <TypeId>701</TypeId>
-    </column>
-    <column id="796" parent="370" name="low">
-      <DataType>double precision|0s</DataType>
-      <Position>5</Position>
-      <StateNumber>29913</StateNumber>
-      <TypeId>701</TypeId>
-    </column>
-    <column id="797" parent="370" name="close">
-      <DataType>double precision|0s</DataType>
-      <Position>6</Position>
-      <StateNumber>29913</StateNumber>
-      <TypeId>701</TypeId>
-    </column>
-    <column id="798" parent="370" name="volume">
-      <DataType>numeric|0s</DataType>
-      <Position>7</Position>
-      <StateNumber>29913</StateNumber>
-      <TypeId>1700</TypeId>
-    </column>
-    <index id="799" parent="370" name="stock_price_impute_dt_im_idx">
-      <ClassIds>3128</ClassIds>
-      <ColNames>dt_im</ColNames>
-      <CollationIds>0</CollationIds>
-      <ObjectId>231852</ObjectId>
-      <ReverseColNames>dt_im</ReverseColNames>
-      <StateNumber>29914</StateNumber>
-      <AccessMethodId>403</AccessMethodId>
-    </index>
-    <trigger id="800" parent="370" name="ts_insert_blocker">
-      <Events>I</Events>
-      <ObjectId>231851</ObjectId>
-      <StateNumber>29914</StateNumber>
-      <Turn>before-row</Turn>
-      <CallRoutineId>17320</CallRoutineId>
-    </trigger>
-    <column id="801" parent="371" name="stock_id">
+    <column id="764" parent="365" name="stock_id">
       <DataType>integer|0s</DataType>
       <Position>1</Position>
       <StateNumber>3599</StateNumber>
     </column>
-    <column id="802" parent="371" name="day">
+    <column id="765" parent="365" name="day">
       <DataType>timestamp|0s</DataType>
       <Position>2</Position>
       <StateNumber>3599</StateNumber>
     </column>
-    <column id="803" parent="371" name="open">
+    <column id="766" parent="365" name="open">
       <DataType>numeric|0s</DataType>
       <Position>3</Position>
       <StateNumber>3599</StateNumber>
     </column>
-    <column id="804" parent="371" name="high">
+    <column id="767" parent="365" name="high">
       <DataType>numeric|0s</DataType>
       <Position>4</Position>
       <StateNumber>3599</StateNumber>
     </column>
-    <column id="805" parent="371" name="low">
+    <column id="768" parent="365" name="low">
       <DataType>numeric|0s</DataType>
       <Position>5</Position>
       <StateNumber>3599</StateNumber>
     </column>
-    <column id="806" parent="371" name="close">
+    <column id="769" parent="365" name="close">
       <DataType>numeric|0s</DataType>
       <Position>6</Position>
       <StateNumber>3599</StateNumber>
     </column>
-    <column id="807" parent="371" name="volume">
+    <column id="770" parent="365" name="volume">
       <DataType>numeric|0s</DataType>
       <Position>7</Position>
       <StateNumber>3599</StateNumber>
     </column>
-    <column id="808" parent="372" name="stock_id">
+    <column id="771" parent="366" name="stock_id">
       <DataType>integer|0s</DataType>
       <Position>1</Position>
       <StateNumber>1637</StateNumber>
     </column>
-    <column id="809" parent="372" name="day">
+    <column id="772" parent="366" name="day">
       <DataType>timestamp|0s</DataType>
       <Position>2</Position>
       <StateNumber>1637</StateNumber>
     </column>
-    <column id="810" parent="372" name="open">
+    <column id="773" parent="366" name="open">
       <DataType>numeric|0s</DataType>
       <Position>3</Position>
       <StateNumber>1637</StateNumber>
     </column>
-    <column id="811" parent="372" name="high">
+    <column id="774" parent="366" name="high">
       <DataType>numeric|0s</DataType>
       <Position>4</Position>
       <StateNumber>1637</StateNumber>
     </column>
-    <column id="812" parent="372" name="low">
+    <column id="775" parent="366" name="low">
       <DataType>numeric|0s</DataType>
       <Position>5</Position>
       <StateNumber>1637</StateNumber>
     </column>
-    <column id="813" parent="372" name="close">
+    <column id="776" parent="366" name="close">
       <DataType>numeric|0s</DataType>
       <Position>6</Position>
       <StateNumber>1637</StateNumber>
     </column>
-    <column id="814" parent="372" name="volume">
+    <column id="777" parent="366" name="volume">
       <DataType>numeric|0s</DataType>
       <Position>7</Position>
       <StateNumber>1637</StateNumber>
